@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+@media (min-width: 260px){
+
+/*Contenedor general*/
+.grid-container{
+width: 100%;
+background-color: rgb(36,36,36);
+display: grid;
+grid-template-areas: 'navbar'
+                         'header'
+                         'main'
+                         'footer';
+}
+
+#navbar-container{
+    grid-area: navbar;
+}
+/*Contenedor de header*/
+
+.header-container{
+    background-color: #fffefd;
+    display: grid;
+    grid-template-areas: 'content-header'
+                         'side-image-header';
+    justify-items: center;
+    grid-template-rows: auto auto;
+}
+
+.side-image-header{
+    grid-area: side-image-header;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.content-header{
+    font-family: 'Koulen', cursive;
+    color: rgb(24, 24, 24);
+    grid-area: content-header;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.special-style-header{
+    border: 1px solid rgb(24, 24, 24);
+    padding: 0 2px;
+}
+
+.img-header{
+    width: 100%;
+
+}
+
+/*Contenedor principal*/
+.grid-container .main-container{
+    justify-self: center;
+}
+
+.main-container{
+    display: grid;
+    grid-template-areas: 'about-me'
+                         'skills'
+                         'hobbies'
+                         'projects';
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color:rgb(36, 36, 36);
+    color:#fffefd ;
+    width: 80%;
+}
+        /*Sobre mi*/
+.about-me-container{
+    grid-area: about-me;
+    text-align: justify;
+}
+.special-style-h2{
+    width: 70px;
+    margin-top: 20px;
+    padding-bottom: 4px;
+    border: 2px solid #fffefd;
+    text-align: center;
+}
+
+        /*Habilidades*/
+.skills-container{
+    display: grid;
+    grid-area: skills;
+    justify-items: center;
+    grid-template-areas: 'skills-title skills-title'
+                         'html css'
+                         'js sql'
+                         ' rd ghub '
+                         'team comunication';}
+
+.content1{
+    grid-area: html;
+    justify-content: center;
+}
+
+.content2{
+    grid-area: css;
+}
+
+.content3{
+    grid-area: js;
+    text-align: center;
+}
+
+.content4{
+    grid-area: sql;
+    text-align: center;
+}
+
+.content5{
+    grid-area: rd;
+    text-align: center;
+}
+
+.content6{
+    grid-area: ghub;
+    text-align: center;
+}
+
+.content7{
+    grid-area: team;
+    text-align: center;
+}
+
+.content8{
+    grid-area: comunication;
+    text-align: center;
+}
+
+.subtitle > p{
+    text-align: center;
+}
+
+.subtitle i{
+    justify-content: center;
+}
+
+         /*Hobbies*/
+.hobbies-container{
+    display: grid;
+    grid-area: hobbies;
+}
+
+.img-hobbies{
+    width: 100%;
+    border: 2px solid #fffefd;
+}
+
+        /*Proyectos*/
+.h2-special{
+    display: inline-block;
+}
+
+        /*Footer*/
+.footer-container{
+    grid-area: footer;
+}
+
+}
+
