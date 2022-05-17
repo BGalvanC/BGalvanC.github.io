@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin:0;
-}
-
 @media (min-width: 260px){
 
 /*Contenedor general*/
@@ -149,6 +143,8 @@ grid-template-areas: 'navbar'
 
          /*Hobbies*/
 .hobbies-container{
+    gap: 1em;
+    text-align: justify;
     display: grid;
     grid-area: hobbies;
 }
@@ -165,7 +161,7 @@ grid-template-areas: 'navbar'
 
         /*Footer*/
 .footer-container{
-    grid-area: footer;
+    background-color: #fffefd;
 }
 
 }
